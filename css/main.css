@@ -1,0 +1,466 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #302f2f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(72, 71, 71), rgb(147, 126, 126));
+    border-radius: 20px;
+}
+
+:root {
+    --main-color: #0078FF;
+}
+
+.back-2-top {
+    background-color: var(--main-color);
+    position: fixed;
+    z-index: 333;
+    border-radius: 50%;
+    bottom: 10px;
+    opacity: 0.8;
+    right: 10px;
+}
+
+.back-2-top a {
+    color: #fff;
+}
+
+.back-2-top a i {
+    padding: 13px 15px;
+}
+
+
+/* NavBar */
+
+.navbar {
+    background-color: #000 !important;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    padding-inline: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    font-size: 16px;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    left: -20%;
+    margin: 0;
+    padding: 0.375rem 0;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 0rem 0rem 1.875rem rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.dropdown ul li {
+    width: 12.5rem;
+    cursor: pointer;
+}
+
+.dropdown ul a {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    color: #4e4e4e;
+}
+
+.dropdown ul a:hover,
+.dropdown ul li:hover>a {
+    color: #0078ff;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown .dropdown ul {
+    left: 90%;
+    top: 0;
+    display: none;
+}
+
+.dropdown .dropdown:hover>ul {
+    display: block;
+}
+
+@media (max-width: 578px) {
+    .dropdown .dropdown ul {
+        left: -50%;
+    }
+
+}
+
+
+
+/* End of navbar */
+
+header {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.over-lay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.487);
+    z-index: 1;
+}
+
+.caption h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.caption span {
+    padding-right: 5px;
+    font-size: 3rem;
+}
+
+@media (max-width:578px) {
+
+    .caption h1,
+    .caption span {
+        font-size: 3rem;
+    }
+}
+
+/* End of Header */
+
+
+#about {
+    background-color: #f1f1f1;
+}
+
+.box-shadow {
+    padding: 3rem 1.25rem !important;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-mf .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    inset: 100% 0 0 0%;
+    width: 15%;
+    height: 3px;
+    background-color: blue;
+}
+
+/* services */
+
+.services {
+    background-color: #f1f1f1;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.main-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2.25rem;
+}
+
+.items {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2.25rem;
+}
+
+.items h3 {
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+}
+
+.items .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items .icon i {
+    font-size: 2.6rem;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    outline: 10px solid var(--main-color);
+    padding: 25px;
+    transition: all .5s;
+
+}
+
+.items:hover i {
+    outline: 10px solid #CDE1F8;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* End of about & services */
+
+.work {
+    background-image: url('../assets/images/counters-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    background-color: var(--main-color);
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.counter {
+    padding-block: 3rem;
+    color: white;
+    margin-block: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+
+.counter .icon i {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+    padding: 25px;
+    transition: all .5s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.25rem auto;
+}
+
+/* End of work */
+.portfolio {
+    background-color: #f1f1f1;
+}
+
+.portfolio .card .plus-icon i {
+    font-size: 1.8rem;
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+    padding: 6px;
+    transition: all .5s;
+    cursor: pointer;
+    font-weight: 100;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.card .work-img {
+    transition: all 1s;
+    position: relative;
+}
+
+.portfolio .card:hover .work-img {
+    transform: scale(1.3);
+}
+
+.portfolio .card .card-title h4 {
+    font-size: 1.3rem;
+}
+
+/* End of portfolio  */
+
+.testimonials .slide {
+    background-image: url(../assets/images/overlay-bg.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.slide .carousel-inner {
+    padding-block: 4.5rem;
+    color: white;
+}
+
+.slide .carousel-btn {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+/* End of testimonials */
+
+.blog {
+    background-color: #f1f1f1;
+}
+
+.blog .blog-card {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #00000031;
+    background-color: #fff;
+    position: relative;
+}
+
+.blog .blog-card .blog__card-last-body {
+    background-color: #F8F8F8;
+}
+
+.blog-card .img__name a {
+    color: #333;
+    transition: all 400ms;
+}
+
+.blog-card .img__name a:hover {
+    color: var(--main-color);
+}
+
+.card-blog .card-body {
+    position: relative;
+}
+
+.floating-title {
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    text-align: center;
+    right: 15px;
+}
+
+.floating-title .title-ref {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+
+.floating-title .title-ref .ref {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* End Of blog */
+
+.contact {
+    background-image: url(../assets/images/overlay-bg.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-block: 2.5rem;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.21);
+}
+
+.contact .form .submit_btn {
+    padding: 10px 20px !important;
+    border-radius: 30px;
+}
+
+.contact .contact-details li {
+    font-size: 1.2rem;
+}
+
+.contact .contact-details li i {
+    padding-right: 10px;
+    color: var(--main-color);
+    padding-block: 10px;
+}
+
+.contact .social_media_icons li:not(:first-child) {
+    padding-left: 20px;
+}
+
+.contact .social_media_icons li i {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    outline: 3px solid var(--main-color);
+    padding: 10px 13px;
+    cursor: pointer;
+    transition: all .5s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .social_media_icons li i:hover {
+    color: #fff;
+    background-color: var(--main-color);
+    outline: 3px solid #0077ff95;
+}
+
+/* End of contact */
+
+footer {
+    background-color: #0162d3;
+    color: white;
+    text-align: center;
+}

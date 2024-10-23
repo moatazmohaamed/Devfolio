@@ -1,0 +1,9 @@
+    - Fix the scroll spy (Done)
+    - Fix the Deep Drop down (Done)
+    - Add variables to main color in css (done)
+    - Make the counter starts when user scroll to it (done)
+    - Fix the carousel in mobile device (done)
+    - adjust the h1 in Header smaller devices (done)
+    - The back to top btn (Done)
+
+deadline s-- 
